@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <input type="text" id="element" placeholder="Es: Lavarsi le mani" name="el" required [(ngModel)]="model.el" #name="ngModel">
+    <button type="submit">INVIA</button>
+</form>
+
+
+<ul *ngFor="let el of array; let i = index">
+    <app-listelement (clicked)="del($event)" (checked)="checkOnEl() " text={{el}} idx={{i}}></app-listelement>
+</ul>

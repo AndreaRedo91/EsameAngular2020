@@ -1,0 +1,30 @@
+img {
+    width: 44vw;
+    position: absolute;
+    right: 4%;
+    top: 18%;
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+    from {
+        content: url("/assets/flag1.svg");
+    }
+    20% {
+        content: url("/assets/flag2.svg");
+    }
+    40% {
+        content: url("/assets/flag3.svg");
+    }
+    60% {
+        content: url("/assets/flag4.svg");
+    }
+    80% {
+        content: url("/assets/flag5.svg");
+    }
+    to {
+        content: url("/assets/flag6.svg");
+    }
+}
